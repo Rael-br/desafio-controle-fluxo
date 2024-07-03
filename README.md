@@ -1,18 +1,15 @@
-## Getting Started
+### Projeto
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi desenvolvido durante o bootcamp da DIO, utilizando Java. O objetivo foi criar um desafio de projeto para explorar alguns cenários com fluxos condicionais, laços de repetição e tratamento de exceções. No final, implementamos um pequeno sistema contador para exercitar todo o conteúdo ministrado nas aulas.
 
-## Folder Structure
+#### Desafio de Controle de Fluxo
 
-The workspace contains two folders by default, where:
+Vamos aplicar todo o conteúdo apresentado no módulo de Controle de Fluxo codificando o seguinte cenário:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O sistema deve receber dois parâmetros via terminal, representando dois números inteiros. Com esses dois números, você deve determinar a quantidade de iterações (usando um laço `for`) e imprimir no console (`System.out.print`) os números incrementados. Por exemplo:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Se você passar os números 12 e 30, teremos 18 iterações para imprimir os números, resultando em: "Imprimindo o número 1", "Imprimindo o número 2", e assim por diante.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Caso o primeiro parâmetro seja MAIOR que o segundo, você deve lançar uma exceção personalizada chamada `ParametrosInvalidosException` com a mensagem: "O segundo parâmetro deve ser maior que o primeiro".
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Crie o projeto `DesafioControleFluxo`. Dentro do projeto, crie a classe `Contador.java` para realizar toda a codificação do nosso programa. Além disso, crie a classe `ParametrosInvalidosException`, que representará a exceção de negócio no sistema.
